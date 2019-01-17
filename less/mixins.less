@@ -1,1 +1,19 @@
 // Mixins in here
+
+@button-font-color: white;
+
+.button-colors{
+    color: @button-font-color;
+    background: @button-bg;
+}
+
+.button-size{
+    width:80%;
+    height:15%;
+    border-radius: 10px;
+}
+
+.example-button{
+    .button-colors;
+    .button-size;
+}

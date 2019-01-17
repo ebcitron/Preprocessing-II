@@ -1,3 +1,19 @@
+.button-colors {
+  color: white;
+  background: #17A2B8;
+}
+.button-size {
+  width: 80%;
+  height: 15%;
+  border-radius: 10px;
+}
+.example-button {
+  color: white;
+  background: #17A2B8;
+  width: 80%;
+  height: 15%;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -249,4 +265,11 @@ Header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .btn {
+  color: white;
+  background: #17A2B8;
+  width: 80%;
+  height: 15%;
+  border-radius: 10px;
 }
