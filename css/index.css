@@ -1,4 +1,5 @@
 @media (max-width: 500px) {
+  width: 500px;
   header {
     display: flex;
     flex-direction: column;
@@ -9,9 +10,17 @@
   header nav {
     align-self: center;
   }
-  .content-section {
+  .home {
     display: flex;
     flex-direction: column;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+  }
+  .home .content-pick .destination {
+    width: 100%;
   }
 }
 .button-colors {
