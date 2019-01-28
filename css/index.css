@@ -1,19 +1,3 @@
-@media (max-width: 500px) {
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-  header h1 {
-    align-self: center;
-  }
-  header nav {
-    align-self: center;
-  }
-  .content-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .button-colors {
   color: white;
   background: #17A2B8;
@@ -205,8 +189,22 @@ Header {
   justify-content: space-between;
   border-bottom: 3px dotted gray;
 }
+@media (max-width: 500px) {
+  Header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
 Header h1 {
   margin: 0.5rem 5rem;
+}
+@media (max-width: 500px) {
+  Header h1 {
+    display: flex;
+    font-size: 3rem;
+  }
 }
 Header nav {
   display: flex;
@@ -246,12 +244,29 @@ Header nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -261,13 +276,28 @@ Header nav a {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: 1;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -278,9 +308,20 @@ Header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
 }
 .home .btn {
   color: white;
